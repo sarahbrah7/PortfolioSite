@@ -1,4 +1,4 @@
-# ProtfolioSite
+# Protfolio Site
 
 The login for the site is
 USERNAME: test@email.com  
