@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <head>
+        <link rel="stylesheet" href="reset.css" type="text/css">
+        <link rel="stylesheet" href="blog.css" type="text/css">
+        <title>Portifolio's Blog</title>
+    </head>
+    <body>
+
+    <script>
+        function clearBlog(){
+            if(confirm("Are you sure you want to clear?")){
+                document.getElementByID('blog').reset();
+            }
+            else{
+                event.preventDefault();
+            }         
+        }
+    </script>
+        <!-- HEADER -->
+        <header id="topSection">
+            <ul class="topList">
+                <li>
+                    <h1>Sarah Brahimi</h1>
+                </li>   
+                <li>
+                    <a href="welcome-page.html#about">About</a>
+                </li>
+                <li>
+                    <a href="welcome-page.html#Experience">Experience</a>
+                </li>
+                <li>
+                    <a href="welcome-page.html#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="welcome-page.html#qualifications">Education</a>
+                </li>
+                <li>
+                    <a href="project.html">Projects</a>
+                </li>
+                <li>
+                    <a href="logout.php">Logout</a>
+                </li>
+            </ul>
+    </header>
+
+    <hgroup id="blogInput">
+        <h2>Add Blog</h2>
+        <hr id="mainHR">
+        <br>
+        <form id="blog" action="addpost.php" method="POST">
+            <label for="title">Title</label>
+            <br>
+            <input type="text" id="title" placeholder="Enter Title" name="title" size="100" onkeyup="document.getElementById('displayTitle').innerHTML = this.value" required>
+            <br>
+            <br>
+            <label for="blogIn">Input Blog</label>
+            <br>
+            <textarea id="blogIn" name="body" rows="10" cols="87" onkeyup="document.getElementById('display').innerHTML = this.value" required></textarea>
+            <br>
+            <br>
+            <button type="submit" onclick="">Post</button>
+            <button type="reset" onclick="clearBlog()">Clear</button>
+        </form>
+
+        <h4>Preview</h4>
+        <div id="displayTitle"></div>
+        <div id="display"></div>
+        
+    </hgroup>
+    </body>
+</html>

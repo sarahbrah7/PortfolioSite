@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang = "en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <head>
+        <link rel="stylesheet" href="reset.css" type="text/css">
+        <link rel="stylesheet" href="welcome.css" type="text/css">
+        <script src="welcome.js"></script>
+        <title>Sarah Brahimi's Portifolio</title>
+    </head>
+    <body>
+        <!-- TOP SECTION -->
+        <header id="topSection">
+                <ul class="topList">
+                    <li>
+                        <h1>Sarah Brahimi</h1>
+                    </li>   
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#Experience">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#qualifications">Education</a>
+                    </li>
+                    <li>
+                        <a href="project.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#login">Blog</a>
+                    </li>
+                </ul>
+        </header>
+        <!-- LOGIN PAGE -->
+        <nav id="login">
+            <h3 id="logTitle">Welcome to Sarah Brahimi's Portifolio</h3>
+            <br>
+            <br>
+            <button class="open-button" onclick="openForm()">Log In</button>
+            
+            <div class="form-popup" id="myForm">
+                <form class="form-container" action="login.php" method="POST">
+                    <h3><em>Log-in Page:</em></h3>
+                    <br>
+                    <label for="email"><b>Email</b></label>
+                    <br> 
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <br>
+                    <br>
+                    <label for="password"><b>Password</b></label>
+                    <br>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+                    <br>
+                    <br>
+                    <button type="submit" class="btn">Log In</button>
+                    <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+        </nav>
+        <br>
+        <!-- ABOUT ME -->
+        <aside id="selfImage">
+            <figure>
+                <img src="OnPaste.20201201-104345.jpg" width="200" height="250">
+                <figcaption>Sarah Brahimi<br>Aspiring Software Engineer</figcaption>
+            </figure>
+        </aside>
+        <article id="about">
+            <section>
+                <h2>About Myself</h2>
+                <hr>
+                <article>
+                    <p id="subText">My name is Sarah Brahimi and I am an undergraduate at Queen Mary University of London studying a BSC in Computer Science.</p>
+                    <br>
+                    <p>
+                        A motivated and hardworking student with a passion and interest in Computer Science, who strives to learn more and <br>discover more about the 
+                        subject. And I strive to not only develop my knowledge and interest with my further education <br>studies, but the opportunity to also 
+                        experience internships and insights would also further develop my interests and <br>knowledge allowing for me to be prepared for future employment 
+                        post university education. I also enjoy partaking in group <br>activities and projects as I am a creative individual and great at collaborative tasks. 
+                    </p>
+                </article>
+            </section>
+        </article>
+        <br>
+        <br>
+        <br>
+        <!-- EDUCATIONS + SKILLS -->
+        <hgroup id="qualifications">
+            <br>
+            <br>
+            <h2>Education</h2>
+            <hr>
+            <p id="subText">These are the qualifications that I have obtained.</p>
+            <br>
+            <table class="table">
+                <tbody>
+                    <tr>
+                      <th scope="row">2018-2020</th>
+                      <td>A Levels in Computer Science (A), Media Studies (A), Maths (B) - Walthamstow Academy</td>           
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2020-2023</th>
+                      <td>Bachelors in Computer Science - Queen Mary University of London</td>             
+                    </tr>
+                  </tbody>
+            </table>
+        </hgroup>
+        <br>
+        <br>
+        <br>
+        <hgroup id="skills">
+            <br>
+            <br>
+            <h2>Skills</h2>
+            <hr class="hrSkills">
+            <p id="subText">These are some skills that I have.</p>
+            <br>
+            <table id="otherTable">
+                <tr>
+                    <th>Practical Skills:</th>
+                    <th>Programming Languages:</th>
+                </tr
+                <tr>
+                    <td>Problem Solving</td>
+                    <td>HTML, CSS, JavaScript, PHP</td>
+                </tr>
+                <tr>
+                    <td>Leadership Skills</td>
+                    <td>Java</td>
+                </tr>
+                <tr>
+                    <td>Communication Skills</td>
+                    <td>Python</td>
+                </tr>
+                <tr>
+                    <td>Creativity</td>
+                    <td>C#</td>
+                </tr>
+            </table>
+        </hgroup>
+        <br>
+        <br>
+        <br>
+        <hgroup id="Experience">
+            <br>
+            <br>
+            <h2>Experience</h2>
+            <hr>
+            <article>
+                <h3>Amazon Audible</h3>
+                <p id="subText">Work Experience - June 2019</p>
+                <p>
+                    An insight into the conglomerate and how e-commerce is a important and key for Amazon. I had also learnt more about how influential their AI, 
+                    Alexa, is in relation to the growth of Amazon and its future.
+                </p>
+            </article>
+            <br>
+            <article>
+                <h3>Ralph Lauren</h3>
+                <p id="subText">Work Experience - April 2019</p>
+                <p>
+                    A look into e-commerce within the fashion industry, specifically luxury brands, also the collaboration between different job roles in the aim 
+                    appeal to consumers.
+                </p>
+            </article>
+        </hgroup>
+        <br>
+        <br>
+        <br>
+        <!-- LINKS -->
+        <nav id="links">
+            <br>
+            <br>
+            <h2>Links to Projects</h2>
+            <hr>
+            <p id="subText">These are links to my LinkedIn and GitHub.</p>
+            <br>
+            <a href="linkedin.com/in/sarah-b-645395174" id="social">
+                <img src="linkedin-3-512.png" height="100px" width="100px">
+            </a>
+            <a href="github.com/sarahbrah7" id="social">
+                <img src="PngItem_2545120.png" height="102px" width="102px">
+            </a>
+            <br>
+        </nav>
+        <!-- FOOTER -->
+        <footer id="contactPage">
+            <br>
+            <br>
+            <ul id="contactsList">
+                <li>
+                    Sarah Brahimi
+                </li>
+                <li>
+                    Email: sarahbrah7@icloud.com
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

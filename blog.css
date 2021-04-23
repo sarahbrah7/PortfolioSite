@@ -1,0 +1,97 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(228, 228, 228);
+}
+/* -------------------------------------------HEADER-------------------------------------- */
+header{
+    position: sticky;
+    top: 0;
+}
+#topSection{
+    float:inline-start;
+    margin-top: 0;
+    display: flex;
+    list-style: none;
+    font-size: large;
+    background-color: rgb(48, 48, 48);
+    padding: 10px;
+}
+h1{
+    color: white;
+    font-weight: normal;
+}
+ul.topList li{
+    width: auto;
+    float: left;
+    list-style: outside none none;
+    margin-right: 1cm;
+}
+
+a:link {
+    color: rgb(163, 163, 163);
+    text-decoration: none;
+}
+a:visited  {
+    color: rgb(163, 163, 163);
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+/* -------------------------------------------BLOG INPUT-------------------------------------- */
+#blogInput{
+    padding: 100px;
+    text-align: center;
+    padding-top: 20px;
+}
+#mainHR{
+    max-width: 200px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left:510px;
+}
+h2{
+    font-size: 25px;
+    font-weight: 700;
+}
+button{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 12px;
+}
+button:hover{
+    background-color: white;
+}
+/* -------------------------------------------PREVIEW-------------------------------------- */
+#displayTitle{
+    font-weight:700;
+    padding:40px;
+    padding-top:0px;
+    padding-bottom: 0px;
+}
+#display{
+    padding:40px;
+    padding-top: 0px;
+}
+h4{
+    font-style: italic;
+    font-size: 20px;
+    padding:20px;
+
+}
+/* -------------------------------------------POSTS-------------------------------------- */
+h6{
+    font-size: 12px;
+    color: grey;
+    font-weight: 100;
+    font-style:italic;
+}
+p{
+    font-style:italic;
+}
+article{
+    padding:40px;
+}
+
